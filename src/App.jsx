@@ -4,11 +4,10 @@ import UserDetails from './pages/UserDetails'
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/users-dashboard">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/users/:id" element={<UserDetails />} />
-       
       </Routes>
     </Router>
   )
