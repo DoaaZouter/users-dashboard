@@ -8,6 +8,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/users/:id" element={<UserDetails />} />
+        <BrowserRouter basename="/users-dashboard"></BrowserRouter>
       </Routes>
     </Router>
   )
